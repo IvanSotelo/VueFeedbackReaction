@@ -1,9 +1,9 @@
-import vue-feedback-reaction from './components/vue-feedback-reaction'
+import VueFeedbackReaction from './components/VueFeedbackReaction'
 
 export default {
   install (Vue) {
-    Vue.component('vue-feedback-reaction', vue-feedback-reaction)
+    Vue.component('vue-feedback-reaction', VueFeedbackReaction)
   }
 }
 
-export { vue-feedback-reaction }
+export { VueFeedbackReaction }

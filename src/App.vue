@@ -1,14 +1,14 @@
 <template lang="pug">
   #app
-    v-doc-viewer
+    vue-feedback-reaction
 </template>
 
 <script>
-import { vue-feedback-reaction } from './index'
+import { VueFeedbackReaction } from './index'
 export default {
   name: 'app',
   components: {
-    vue-feedback-reaction
+    VueFeedbackReaction
   }
 }
 </script>

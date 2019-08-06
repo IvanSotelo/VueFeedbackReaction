@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import App from './App.vue'
-import { vue-feedback-reaction } from './index'
+import { VueFeedbackReaction } from './index'
 
 Vue.config.productionTip = false
-Vue.use(vue-feedback-reaction)
+Vue.use(VueFeedbackReaction)
 
 new Vue({
-  components: { vue-feedback-reaction },
+  components: { VueFeedbackReaction },
   render: h => h(App)
 }).$mount('#app')

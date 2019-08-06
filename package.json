@@ -1,30 +1,29 @@
 {
-  "name": "vue-feedback-reaction",
+  "name": "VueFeedbackReaction",
   "version": "0.1.0",
   "description": "Helps you to collect feedback and leads using the most spoken language in the world: the emoji.",
   "license": "MIT",
   "author": "Controlla <contacto@controlla.com.mx>",
   "contributors": [
-    "Ivan Sotelo <isotelo@controlla.com.mx>",
     "Ivan Sotelo <isotelo@controlla.com.mx>"
   ],
-  "homepage": "https://IvanSotelo.github.io/vue-feedback-reaction/",
-  "repository": "IvanSotelo/vue-feedback-reaction",
+  "homepage": "https://IvanSotelo.github.io/VueFeedbackReaction/",
+  "repository": "IvanSotelo/VueFeedbackReaction",
   "bugs": {
-    "url": "https://github.com/IvanSotelo/vue-feedback-reaction/issues"
+    "url": "https://github.com/IvanSotelo/VueFeedbackReaction/issues"
   },
   "scripts": {
     "serve": "vue-cli-service serve --hot",
     "release": "npm run build-bundle && standard-version && git push --follow-tags && npm publish",
     "build": "vue-cli-service build",
-    "build-bundle": "vue-cli-service build --target lib --name vue-feedback-reaction ./src/index.js",
+    "build-bundle": "vue-cli-service build --target lib --name VueFeedbackReaction ./src/index.js",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit",
     "postinstall": "controlla-postinstall || exit 0"
   },
   "controlla": {
-    "url": "https://github.com/IvanSotelo/vue-feedback-reaction",
+    "url": "https://github.com/IvanSotelo/VueFeedbackReaction",
     "logoUrl": "https://controlla.com.mx/logo.txt"
   },
   "dependencies": {
@@ -39,9 +38,9 @@
     "*.json",
     "*.js"
   ],
-  "main": "./dist/vue-feedback-reaction.common.js",
-  "unpkg": "dist/vue-feedback-reaction.umd.min.js",
-  "jsdelivr": "dist/vue-feedback-reaction.umd.min.js",
+  "main": "./dist/VueFeedbackReaction.common.js",
+  "unpkg": "dist/VueFeedbackReaction.umd.min.js",
+  "jsdelivr": "dist/VueFeedbackReaction.umd.min.js",
   "private": false,
   "devDependencies": {
     "@commitlint/cli": "^7.6.1",

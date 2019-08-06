@@ -1,14 +1,14 @@
-# vue-feedback-reaction
+# VueFeedbackReaction
 
 > Helps you to collect feedback and leads using the most spoken language in the world: the emoji.
 
 
-<a target="_blank" href="https://travis-ci.org/IvanSotelo/vue-feedback-reaction"><img src="https://travis-ci.org/IvanSotelo/vue-feedback-reaction.svg?branch=master"></a>
+<a target="_blank" href="https://travis-ci.org/IvanSotelo/VueFeedbackReaction"><img src="https://travis-ci.org/IvanSotelo/VueFeedbackReaction.svg?branch=master"></a>
 
 ## Installation
 
 ``` bash
-$ npm install --save vue-feedback-reaction
+$ npm install --save VueFeedbackReaction
 ```
 
 
