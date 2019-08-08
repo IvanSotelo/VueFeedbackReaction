@@ -56,8 +56,8 @@ export default {
       disappointedActive: DisappointedActive
     }
   },
-  watch:{
-    reactionValue (value){
+  watch: {
+    reactionValue (value) {
       this.$emit('input', value)
     }
   }
