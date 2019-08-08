@@ -38,10 +38,24 @@
     "*.json",
     "*.js"
   ],
+  "style": "dist/VueFeedbackReaction.css",
   "main": "./dist/VueFeedbackReaction.common.js",
   "unpkg": "dist/VueFeedbackReaction.umd.min.js",
   "jsdelivr": "dist/VueFeedbackReaction.umd.min.js",
   "private": false,
+  "keywords": [
+    "vue",
+    "vuejs",
+    "vue-component",
+    "component",
+    "vue.js",
+    "feedback",
+    "rate",
+    "facebook",
+    "controlla",
+    "reaction",
+    "animation"
+  ],
   "devDependencies": {
     "@commitlint/cli": "^7.6.1",
     "@commitlint/config-conventional": "^7.6.0",

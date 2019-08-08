@@ -2,15 +2,18 @@
 
 > Helps you to collect feedback and leads using the most spoken language in the world: the emoji.
 
-
-<a target="_blank" href="https://travis-ci.org/IvanSotelo/VueFeedbackReaction"><img src="https://travis-ci.org/IvanSotelo/VueFeedbackReaction.svg?branch=master"></a>
+[![NPMVERSION](https://img.shields.io/npm/v/vue-feedback-reaction.svg)](http://npmjs.com/package/vue-feedback-reaction) [![GITHUBSTARS](https://img.shields.io/github/stars/IvanSotelovue-feedback-reaction.svg)](https://github.com/IvanSotelovue-feedback-reaction/stargazers) [![BUILD](https://travis-ci.org/IvanSotelovue-feedback-reaction.svg?branch=master)](https://travis-ci.org/IvanSotelovue-feedback-reaction) [![DOWNLOADS](https://img.shields.io/npm/dtvue-feedback-reaction.svg)](https://npmjs.com/packagevue-feedback-reaction)
 
 This project is inspired by [Feedback Reactions](https://dribbble.com/shots/4793955-Feedback-Reactions) from [Mohammad Amiri](https://dribbble.com/pixelamiri)
 
 ## Installation
 
 ``` bash
-$ npm i vue-feedback-reaction
+# Install with npm
+$ npm i -S vue-feedback-reaction
+
+# or yarn
+$ yarn add vue-feedback-reaction
 ```
 
 
