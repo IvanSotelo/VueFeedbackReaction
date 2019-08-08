@@ -36,6 +36,9 @@ export default {
       type: [String, Number]
     }
   },
+  mounted () {
+    this.reactionValue = this.value
+  },
   data () {
     return {
       reactionValue: '',
