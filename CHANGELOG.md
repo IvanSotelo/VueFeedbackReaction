@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/IvanSotelo/VueFeedbackReaction/compare/v0.2.1...v1.0.1) (2019-08-08)
+
+
+### Bug Fixes
+
+* **model:** asign value to model ([bf28c73](https://github.com/IvanSotelo/VueFeedbackReaction/commit/bf28c73))
+* **readme:** badges ([5be9ca6](https://github.com/IvanSotelo/VueFeedbackReaction/commit/5be9ca6))
+* **readme:** badges config ([2b06e28](https://github.com/IvanSotelo/VueFeedbackReaction/commit/2b06e28))
+* version ([a99283d](https://github.com/IvanSotelo/VueFeedbackReaction/commit/a99283d))
+
+
+
 ### [0.2.1](https://github.com/IvanSotelo/VueFeedbackReaction/compare/v0.2.0...v0.2.1) (2019-08-08)
 
 
