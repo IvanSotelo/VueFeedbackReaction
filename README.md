@@ -5,25 +5,34 @@
 
 <a target="_blank" href="https://travis-ci.org/IvanSotelo/VueFeedbackReaction"><img src="https://travis-ci.org/IvanSotelo/VueFeedbackReaction.svg?branch=master"></a>
 
+This project is inspired by [Feedback Reactions](https://dribbble.com/shots/4793955-Feedback-Reactions) from [Mohammad Amiri](https://dribbble.com/pixelamiri)
+
 ## Installation
 
 ``` bash
-$ npm install --save VueFeedbackReaction
+$ npm i vue-feedback-reaction
 ```
 
 
 ## Usage
 
 ``` vue
+<template>
+  <div class="app">
+    <vue-feedback-reaction v-model="feedback"/>
+  </div>
+</template>
 
+<script>
+  import VueFeedbackReaction from 'vue-feedback-reaction';
+  export default {
+    name: 'demo',
+    components: {
+      VueFeedbackReaction
+    }
+  };
+</script>
 ```
-
-## Properties
-
-* `blend-mode` **[String]**
-
-  Optional; `difference` by defualt. The blend mode.
-
 
 ## License
 
