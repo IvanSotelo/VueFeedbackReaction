@@ -2,7 +2,7 @@
 
 > Helps you to collect feedback and leads using the most spoken language in the world: the emoji.
 
-[![NPMVERSION](https://img.shields.io/npm/v/vue-feedback-reaction.svg)](http://npmjs.com/package/vue-feedback-reaction) [![GITHUBSTARS](https://img.shields.io/github/stars/IvanSotelovue-feedback-reaction.svg)](https://github.com/IvanSotelovue-feedback-reaction/stargazers) [![BUILD](https://travis-ci.org/IvanSotelovue-feedback-reaction.svg?branch=master)](https://travis-ci.org/IvanSotelovue-feedback-reaction) [![DOWNLOADS](https://img.shields.io/npm/dtvue-feedback-reaction.svg)](https://npmjs.com/packagevue-feedback-reaction)
+[![NPMVERSION](https://img.shields.io/npm/v/vue-feedback-reaction.svg)](http://npmjs.com/package/vue-feedback-reaction) [![GITHUBSTARS](https://img.shields.io/github/stars/IvanSotelo/vue-feedback-reaction.svg)](https://github.com/IvanSotelo/vue-feedback-reaction/stargazers) [![BUILD](https://travis-ci.org/IvanSotelo/vue-feedback-reaction.svg?branch=master)](https://travis-ci.org/IvanSotelo/vue-feedback-reaction) [![DOWNLOADS](https://img.shields.io/npm/dt/vue-feedback-reaction.svg)](https://npmjs.com/package/vue-feedback-reaction)
 
 This project is inspired by [Feedback Reactions](https://dribbble.com/shots/4793955-Feedback-Reactions) from [Mohammad Amiri](https://dribbble.com/pixelamiri)
 
