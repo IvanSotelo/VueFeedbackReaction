@@ -1,6 +1,6 @@
 <template lang="pug">
   #app
-    vue-feedback-reaction
+    vue-feedback-reaction(v-model="feedback")
 </template>
 
 <script>
@@ -9,6 +9,11 @@ export default {
   name: 'app',
   components: {
     VueFeedbackReaction
+  },
+  data () {
+    return {
+      feedback: null
+    }
   }
 }
 </script>
