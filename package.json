@@ -18,6 +18,7 @@
     "build": "vue-cli-service build",
     "build-bundle": "vue-cli-service build --target lib --name VueFeedbackReaction ./src/index.js",
     "lint": "vue-cli-service lint",
+    "lint-md": "remark .",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit",
     "postinstall": "controlla-postinstall || exit 0"
@@ -74,14 +75,22 @@
     "husky": "^2.2.0",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
+    "remark-cli": "^7.0.0",
+    "remark-preset-lint-recommended": "^3.0.3",
     "standard-version": "^6.0.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "vue-template-compiler": "^2.6.10"
   },
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-lint-recommended",
+      ["remark-lint-list-item-indent", false]
+    ]
+  },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint",
+      "pre-commit": "npm run lint && npm run lint-md",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   }
