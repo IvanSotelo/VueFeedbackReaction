@@ -2,6 +2,7 @@
 
 > Helps you to collect feedback and leads using the most spoken language in the world: the emoji.
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/afda1cbc405d4ef2844920e9c46772df)](https://www.codacy.com/manual/IvanSotelo/VueFeedbackReaction?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=IvanSotelo/VueFeedbackReaction&amp;utm_campaign=Badge_Grade)
 [![NPMVERSION](https://img.shields.io/npm/v/vue-feedback-reaction.svg)](http://npmjs.com/package/vue-feedback-reaction) [![GITHUBSTARS](https://img.shields.io/github/stars/IvanSotelo/VueFeedbackReaction.svg)](https://github.com/IvanSotelo/VueFeedbackReaction/stargazers) [![MadeWithVueJs.com shield](https://madewithvuejs.com/storage/repo-shields/1774-shield.svg)](https://madewithvuejs.com/p/vuefeedbackreaction/shield-link) [![BUILD](https://travis-ci.org/IvanSotelo/VueFeedbackReaction.svg?branch=master)](https://travis-ci.org/IvanSotelo/VueFeedbackReaction) [![DOWNLOADS](https://img.shields.io/npm/dt/vue-feedback-reaction.svg)](https://npmjs.com/package/vue-feedback-reaction)
 [![Build Status](https://github.com/IvanSotelo/VueFeedbackReaction/workflows/Build/badge.svg)](https://github.com/IvanSotelo/VueFeedbackReaction/actions)
 
