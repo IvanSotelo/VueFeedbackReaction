@@ -1,10 +1,20 @@
 <template lang="pug">
   .vue-feedback-reaction
-    vue-reaction(v-model="reactionValue" reaction="1" :hover-image="hate" :image="hateInactive" :selected-image="hateActive")
-    vue-reaction(v-model="reactionValue" reaction="2" :hover-image="disappointed" :image="disappointedInactive" :selected-image="disappointedActive")
-    vue-reaction(v-model="reactionValue" reaction="3" :hover-image="natural" :image="naturalInactive" :selected-image="naturalActive")
-    vue-reaction(v-model="reactionValue" reaction="4" :hover-image="good" :image="goodInactive" :selected-image="goodActive")
-    vue-reaction(v-model="reactionValue" reaction="5" :hover-image="excellent" :image="excellentInactive" :selected-image="excellentActive")
+    .reaction
+      vue-reaction(v-model="reactionValue" reaction="1" :hover-image="hate" :image="hateInactive" :selected-image="hateActive")
+      span(:class="labelClass") {{ labels[0] || '' }}
+    .reaction
+      vue-reaction(v-model="reactionValue" reaction="2" :hover-image="disappointed" :image="disappointedInactive" :selected-image="disappointedActive")
+      span(:class="labelClass") {{ labels[1] || '' }}
+    .reaction
+      vue-reaction(v-model="reactionValue" reaction="3" :hover-image="natural" :image="naturalInactive" :selected-image="naturalActive")
+      span(:class="labelClass") {{ labels[2] || '' }}
+    .reaction
+      vue-reaction(v-model="reactionValue" reaction="4" :hover-image="good" :image="goodInactive" :selected-image="goodActive")
+      span(:class="labelClass") {{ labels[3] || '' }}
+    .reaction
+      vue-reaction(v-model="reactionValue" reaction="5" :hover-image="excellent" :image="excellentInactive" :selected-image="excellentActive")
+      span(:class="labelClass") {{ labels[4] || '' }}
 </template>
 
 <script>
@@ -34,6 +44,14 @@ export default {
     value: {
       default: '',
       type: [String, Number]
+    },
+    labels: {
+      default: () => [],
+      type: Array
+    },
+    labelClass: {
+      default: '',
+      type: [Object, Array, String]
     }
   },
   mounted () {

@@ -1,6 +1,6 @@
 <template lang="pug">
   #app(:style="style")
-    vue-feedback-reaction.feedback(v-model="feedback")
+    vue-feedback-reaction.feedback(v-model="feedback" :labels="['Very Poor', 'Poor', 'Average', 'Good', 'Excellent']" label-class="font-medium text-sm text-gray-800")
 </template>
 
 <script>
@@ -48,4 +48,10 @@ body
     display inline-flex
     background white
     border-radius 12px
+.text-sm
+  font-size 0.875rem
+.text-gray-800
+  color #2d3748
+.font-medium
+  font-weight 500
 </style>
