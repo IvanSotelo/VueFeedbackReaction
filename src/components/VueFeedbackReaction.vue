@@ -47,7 +47,8 @@ export default {
     },
     labels: {
       default: () => [],
-      type: Array
+      type: Array,
+      validator: v => v && v.length ? v.length === 5 : false
     },
     labelClass: {
       default: '',
