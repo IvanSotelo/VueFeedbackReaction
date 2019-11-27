@@ -23,20 +23,32 @@ $ yarn add vue-feedback-reaction
 ``` vue
 <template>
   <div class="app">
-    <vue-feedback-reaction v-model="feedback"/>
+    <vue-feedback-reaction v-model="feedback" />
   </div>
 </template>
 
 <script>
-  import VueFeedbackReaction from 'vue-feedback-reaction';
+  import { VueFeedbackReaction } from 'vue-feedback-reaction';
+
   export default {
     name: 'demo',
     components: {
       VueFeedbackReaction
-    }
+    },
+    data: () => ({
+      feedback: ''
+    })
   };
 </script>
 ```
+
+## Props
+
+| Property name | Type                  | Default | Description                                                                        |
+|---------------|-----------------------|---------|------------------------------------------------------------------------------------|
+| value         | String, Number        | ''      | Input value (v-model)                                                              |
+| labels        | Array                 | []      | Array of strings that set labels below each emoji reaction, starting from the left |
+| labelClass    | Object, Array, String | ''      | Only works if you are using the labels prop. Set a v-bind:class to all the labels  |
 
 ## License
 
