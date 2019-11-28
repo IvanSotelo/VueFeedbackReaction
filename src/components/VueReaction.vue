@@ -1,6 +1,6 @@
 <template lang="pug">
-  .vue-reaction
-    img(:src="currentImage" v-on="listeners" @click="updateActiveReaction" @keydown.space="updateActiveReaction")
+  .vue-reaction(:style="{ width, height }")
+    img(:src="currentImage" v-on="listeners" @click="updateActiveReaction" @keydown.space="updateActiveReaction" :style="{ width, height }")
     .effect
 </template>
 
@@ -23,6 +23,12 @@ export default {
     },
     reaction: {
       type: String
+    },
+    width: {
+      type: [String, Number]
+    },
+    height: {
+      type: [String, Number]
     }
   },
   data () {
@@ -67,6 +73,8 @@ export default {
   display flex
   -webkit-transition all .2s ease
   transition all .2s ease
+  justify-content center
+  align-items center
   cursor pointer
   height 60px
   width 58px
