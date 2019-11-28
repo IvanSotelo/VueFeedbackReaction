@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/IvanSotelo/VueFeedbackReaction/compare/v1.0.1...v1.1.0) (2019-11-28)
+
+
+### Bug Fixes
+
+* package-lock ([9689243](https://github.com/IvanSotelo/VueFeedbackReaction/commit/9689243))
+* **lint:** no-literal-urls ([a11ad79](https://github.com/IvanSotelo/VueFeedbackReaction/commit/a11ad79))
+* **readme:** add badge ([2a4fa5f](https://github.com/IvanSotelo/VueFeedbackReaction/commit/2a4fa5f))
+
+
+### Features
+
+* **remark-lint:** add plugin ([68ce354](https://github.com/IvanSotelo/VueFeedbackReaction/commit/68ce354))
+* add four props that can change the width/height of the elements ([4746146](https://github.com/IvanSotelo/VueFeedbackReaction/commit/4746146))
+* add labels and labelclass prop (default false). update demo app ([d5de8a6](https://github.com/IvanSotelo/VueFeedbackReaction/commit/d5de8a6))
+* add prop validation to labels ([04ebaac](https://github.com/IvanSotelo/VueFeedbackReaction/commit/04ebaac))
+
+
+
 ### [1.0.1](https://github.com/IvanSotelo/VueFeedbackReaction/compare/v0.2.1...v1.0.1) (2019-08-08)
 
 
