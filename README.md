@@ -44,11 +44,15 @@ $ yarn add vue-feedback-reaction
 
 ## Props
 
-| Property name | Type                  | Default | Description                                                                        |
-|---------------|-----------------------|---------|------------------------------------------------------------------------------------|
-| value         | String, Number        | ''      | Input value (v-model)                                                              |
-| labels        | Array                 | []      | Array of strings that set labels below each emoji reaction, starting from the left |
-| labelClass    | Object, Array, String | ''      | Only works if you are using the labels prop. Set a v-bind:class to all the labels  |
+| Property name   | Type                  | Default | Description                                                                        |
+|-----------------|-----------------------|---------|------------------------------------------------------------------------------------|
+| value           | String, Number        | ''      | Input value (v-model)                                                              |
+| labels          | Array                 | []      | Array of strings that set labels below each emoji reaction, starting from the left |
+| labelClass      | Object, Array, String | ''      | Only works if you are using the labels prop. Set a v-bind:class to all the labels  |
+| emojiWidth      | String, Number        | ''      | Set a width for all emojis                                                         |
+| emojiHeight     | String, Number        | ''      | Set a height for all emojis                                                        |
+| containerWidth  | String, Number        | ''      | Set the containers width                                                           |
+| containerHeight | String, Number        | ''      | Set the containers height                                                          |
 
 ## License
 
