@@ -1,4 +1,5 @@
 import VueFeedbackReaction from './components/VueFeedbackReaction'
+import VueReactionEmoji from './components/VueReactionEmoji'
 
 export default {
   install (Vue) {
@@ -6,4 +7,4 @@ export default {
   }
 }
 
-export { VueFeedbackReaction }
+export { VueFeedbackReaction, VueReactionEmoji }
