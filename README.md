@@ -18,8 +18,11 @@ $ npm i -S vue-feedback-reaction
 $ yarn add vue-feedback-reaction
 ```
 
+**Note:** This project exports two components, VueFeedBackReaction, which is the feedback component itself, and VueReactionEmoji, if you'd like to use a single emoji
 
 ## Usage
+
+### VueFeedbackReaction
 
 ``` vue
 <template>
@@ -43,7 +46,7 @@ $ yarn add vue-feedback-reaction
 </script>
 ```
 
-## Props
+### Props
 
 | Property name   | Type                  | Default | Description                                                                        |
 |-----------------|-----------------------|---------|------------------------------------------------------------------------------------|
@@ -54,6 +57,46 @@ $ yarn add vue-feedback-reaction
 | emojiHeight     | String, Number        | ''      | Set a height for all emojis                                                        |
 | containerWidth  | String, Number        | ''      | Set the containers width                                                           |
 | containerHeight | String, Number        | ''      | Set the containers height                                                          |
+
+### VueReactionEmoji
+
+``` vue
+<template>
+  <div class="app">
+    <vue-reaction-emoji :reaction="reaction" :is-active="isActive" :is-disabled="isDisabled" />
+  </div>
+</template>
+
+<script>
+  import { VueReactionEmoji } from 'vue-feedback-reaction';
+
+  export default {
+    name: 'demo',
+    components: {
+      VueReactionEmoji
+    },
+    data: () => ({
+      reaction: 'natural',
+      isActive: false,
+      isDisabled: false
+    })
+  };
+</script>
+```
+
+### Props
+
+| Property name   | Type           | Default   | Description                                                                                    |
+|-----------------|----------------|-----------|------------------------------------------------------------------------------------------------|
+| reaction        | String         | 'natural' | Reaction of the emoji. Must be either `hate`, `disappointed`, `natural`, `good` or `excellent` |
+| is-active       | Boolean        | false     | If you want the emoji to start with it's active state, set it to `true`                        |
+| is-disabled     | Boolean        | false     | If you want the emoji to have **no** hover or click state, set it to `true`                    |
+| width           | String, Number | ''        | Set the emojis width                                                                           |
+| height          | String, Number | ''        | Set the emojis height                                                                          |
+
+### Events
+
+It emits an `@input` event when you click an emoji, if `is-disabled` is set to `false`.
 
 ## License
 
