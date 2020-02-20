@@ -23,7 +23,6 @@ export default {
       type: String,
       default: 'natural',
       validator: (v) => (['hate', 'disappointed', 'natural', 'good', 'excellent'].includes(v))
-
     },
     isActive: {
       type: Boolean

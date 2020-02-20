@@ -18,7 +18,7 @@ $ npm i -S vue-feedback-reaction
 $ yarn add vue-feedback-reaction
 ```
 
-**Note:** This project exports two components, VueFeedBackReaction, which is the feedback component itself, and VueReactionEmoji, if you'd like to use a single emoji
+**Note:** This project exports two components, VueFeedBackReaction, which is the feedback component itself, and VueReactionEmoji, if you'd like to use a single emoji. If you install using `Vue.use`, you will **only** get VueFeedbackReaction component.
 
 ## Usage
 
