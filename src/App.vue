@@ -1,18 +1,29 @@
 <template lang="pug">
   #app(:style="style")
+    h1 All emojis
     vue-feedback-reaction.feedback(v-model="feedback" :labels="['Very Poor', 'Poor', 'Average', 'Good', 'Excellent']" label-class="font-medium text-sm text-gray-800")
+    h2 Single emoji
+    vue-reaction-emoji(
+      :reaction="reaction"
+      :is-active="active",
+      :is-disabled="disabled"
+    )
 </template>
 
 <script>
-import { VueFeedbackReaction } from './index'
+import { VueFeedbackReaction, VueReactionEmoji } from './index'
 export default {
   name: 'app',
   components: {
-    VueFeedbackReaction
+    VueFeedbackReaction,
+    VueReactionEmoji
   },
   data () {
     return {
-      feedback: null
+      feedback: '',
+      reaction: 'hate',
+      active: false,
+      disabled: false
     }
   },
   computed: {
@@ -54,4 +65,7 @@ body
   color #2d3748
 .font-medium
   font-weight 500
+h1, h2
+  color #2d3748
+  font-weight 600
 </style>
