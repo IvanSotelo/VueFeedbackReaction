@@ -62,10 +62,10 @@ body
 .text-sm
   font-size 0.875rem
 .text-gray-800
-  color #2d3748
+  color #6f6f6f
 .font-medium
   font-weight 500
 h1, h2
-  color #2d3748
+  color #fff
   font-weight 600
 </style>
