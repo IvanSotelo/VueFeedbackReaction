@@ -109,6 +109,9 @@ export default {
   watch: {
     reactionValue (value) {
       this.$emit('input', value)
+    },
+    value (val) {
+      this.reactionValue = val
     }
   }
 }
