@@ -73,7 +73,7 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "husky": "^2.2.0",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "pug-plain-loader": "^1.0.0",
     "remark-cli": "^7.0.0",
     "remark-preset-lint-recommended": "^3.0.3",
