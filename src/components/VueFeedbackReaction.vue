@@ -75,7 +75,7 @@ export default {
     labels: {
       default: () => [],
       type: Array,
-      validator: v => v && v.length ? v.length === 5 : false
+      validator: v => v && (v.length === 0 || v.length === 5)
     },
     labelClass: {
       default: '',
