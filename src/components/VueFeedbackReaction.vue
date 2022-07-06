@@ -1,60 +1,16 @@
 <template lang="pug">
   .vue-feedback-reaction(:style="{ width: containerWidth, height: containerHeight }")
-    .reaction
+    .reaction(v-for="(reactionItem, index) in reactionItems")
       vue-reaction(
         v-model="reactionValue"
-        reaction="1"
-        :hover-image="hate"
-        :image="hateInactive"
-        :selected-image="hateActive"
+        :reaction="String(index + 1)"
+        :hover-image="reactionItem.hoverImage"
+        :image="reactionItem.image"
+        :selected-image="reactionItem.selectedImage"
         :width="emojiWidth"
         :height="emojiHeight"
       )
-      span(:class="labelClass") {{ labels[0] || '' }}
-    .reaction
-      vue-reaction(
-        v-model="reactionValue"
-        reaction="2"
-        :hover-image="disappointed"
-        :image="disappointedInactive"
-        :selected-image="disappointedActive"
-        :width="emojiWidth"
-        :height="emojiHeight"
-      )
-      span(:class="labelClass") {{ labels[1] || '' }}
-    .reaction
-      vue-reaction(
-        v-model="reactionValue"
-        reaction="3"
-        :hover-image="natural"
-        :image="naturalInactive"
-        :selected-image="naturalActive"
-        :width="emojiWidth"
-        :height="emojiHeight"
-      )
-      span(:class="labelClass") {{ labels[2] || '' }}
-    .reaction
-      vue-reaction(
-        v-model="reactionValue"
-        reaction="4"
-        :hover-image="good"
-        :image="goodInactive"
-        :selected-image="goodActive"
-        :width="emojiWidth"
-        :height="emojiHeight"
-      )
-      span(:class="labelClass") {{ labels[3] || '' }}
-    .reaction
-      vue-reaction(
-        v-model="reactionValue"
-        reaction="5"
-        :hover-image="excellent"
-        :image="excellentInactive"
-        :selected-image="excellentActive"
-        :width="emojiWidth"
-        :height="emojiHeight"
-      )
-      span(:class="labelClass") {{ labels[4] || '' }}
+      span(:class="labelClass") {{ reactionItem.label }}
 </template>
 
 <script>
@@ -75,7 +31,7 @@ export default {
     labels: {
       default: () => [],
       type: Array,
-      validator: v => v && v.length ? v.length === 5 : false
+      validator: v => v && (v.length === 0 || v.length === 5)
     },
     labelClass: {
       default: '',
@@ -100,11 +56,44 @@ export default {
   },
   data () {
     return {
-      reactionValue: ''
+      reactionValue: '',
+      reactionItems: []
     }
   },
   mounted () {
     this.reactionValue = this.value
+    this.reactionItems = [
+      {
+        hoverImage: this.hate,
+        image: this.hateInactive,
+        selectedImage: this.hateActive,
+        label: this.labels[0] || ''
+      },
+      {
+        hoverImage: this.disappointed,
+        image: this.disappointedInactive,
+        selectedImage: this.disappointedActive,
+        label: this.labels[1] || ''
+      },
+      {
+        hoverImage: this.natural,
+        image: this.naturalInactive,
+        selectedImage: this.naturalActive,
+        label: this.labels[2] || ''
+      },
+      {
+        hoverImage: this.good,
+        image: this.goodInactive,
+        selectedImage: this.goodActive,
+        label: this.labels[3] || ''
+      },
+      {
+        hoverImage: this.excellent,
+        image: this.excellentInactive,
+        selectedImage: this.excellentActive,
+        label: this.labels[4] || ''
+      }
+    ]
   },
   watch: {
     reactionValue (value) {
